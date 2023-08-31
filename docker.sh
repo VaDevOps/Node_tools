@@ -1,3 +1,4 @@
+#!/bin/bash
 curl -s https://raw.githubusercontent.com/NodesLLS/Node_tools/main/logo.sh | bash
 #Install Docker condition
 if ! command -v docker >/dev/null 2>&1; then
