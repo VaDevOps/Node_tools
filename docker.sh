@@ -21,5 +21,4 @@ else
 
 fi
 
-echo "### Test Docker ###"
-sudo docker run hello-world
+
