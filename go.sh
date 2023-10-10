@@ -1,12 +1,4 @@
 #!/bin/bash
-curl -s https://raw.githubusercontent.com/NodesLLS/Node_tools/main/logo.sh | bash
-while getopts v: flag; do
-  case "${flag}" in
-  v) VER=$OPTARG ;;
-  *) echo "WARN: unknown parameter: ${OPTARG}"
-  esac
-done
-
 version=${VER:-"1.20.5"}
 
 curl -L -# -O "https://golang.org/dl/go$version.linux-amd64.tar.gz"
