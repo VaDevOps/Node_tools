@@ -5,3 +5,9 @@
   echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
   sudo apt-get update 
   sudo apt-get install yarn -y
+  red=$(tput setaf 1)
+  bold=$(tput bold)
+  normal=$(tput sgr0)
+
+  echo "${bold}${red}Node Version :${normal}"
+  node -v
